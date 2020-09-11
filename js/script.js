@@ -17,6 +17,9 @@ $(document).ready(function() {
 		 // Use that number to index a random number from the answers array
 		 var answer = this.listOfAnswers[randomIndex];
 
+         // Show the answer
+         $("#answer").text(answer);
+
 		 console.log(question);
 		 console.log(answer);
     };
