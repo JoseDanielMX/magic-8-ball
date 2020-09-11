@@ -19,5 +19,15 @@ $(document).ready(function() {
 
 		 console.log(question);
 		 console.log(answer);
-	};
+    };
+    
+    // Prompt a popup window to write a question
+    var onClick = function() {
+ 
+        var question = prompt("ASK A YES/NO QUESTION!");
+        magic8Ball.askQuestion(question);
+     
+    };
+     
+    $("#questionButton").click( onClick );
 });
