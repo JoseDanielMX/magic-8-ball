@@ -1,9 +1,13 @@
 $(document).ready(function() {
 	var magic8Ball = {};
 	magic8Ball.listOfAnswers = ["No", "Yes", "I don't think so...", "Of course!", "Indubitably", "In your dreams."];
+    $("#answer").hide();
 
 	// Define the method
 	magic8Ball.askQuestion = function(question) {
+
+        // Add a fade in effect
+		 $("#answer").fadeIn(4000);
 
 		 // Create a random number
 		 var randomNumber = Math.random();
@@ -27,6 +31,7 @@ $(document).ready(function() {
     // Prompt a popup window to write a question
     var onClick = function() {
  
+        $("#answer").hide();
         var question = prompt("ASK A YES/NO QUESTION!");
         magic8Ball.askQuestion(question);
      
