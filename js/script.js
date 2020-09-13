@@ -41,8 +41,8 @@ $(document).ready(function() {
 		   setTimeout(
 			   function() {
 				   // Show prompt
-				   var question = prompt("Ask a yes or no question")
-				   magic8Ball.askQuestion(question)
+				   var question = prompt("Ask a YES or NO question");
+				   magic8Ball.askQuestion(question);
 			   }, 500);
      
     };
