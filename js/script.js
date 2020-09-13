@@ -42,6 +42,7 @@ $(document).ready(function() {
 			   function() {
 				   // Show prompt
 				   var question = prompt("Ask a YES or NO question");
+				   $("#8ball").effect( "shake" );
 				   magic8Ball.askQuestion(question);
 			   }, 500);
      
