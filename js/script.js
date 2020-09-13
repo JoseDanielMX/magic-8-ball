@@ -24,16 +24,26 @@ $(document).ready(function() {
          // Show the answer
          $("#answer").text(answer);
 
+		// Change the side of the image
+		$("#8ball").attr("src", "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/magic8ballAnswer.png");
+
 		 console.log(question);
 		 console.log(answer);
     };
     
-    // Prompt a popup window to write a question
+    // Prompt a popup window to write a question, hide previous answer and change the side of the image
     var onClick = function() {
  
-        $("#answer").hide();
-        var question = prompt("ASK A YES/NO QUESTION!");
-        magic8Ball.askQuestion(question);
+		$("#answer").hide();
+		$("#8ball").attr("src", "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/magic8ballQuestion.png");
+		 
+		// Wait half a second before showing prompt
+		   setTimeout(
+			   function() {
+				   // Show prompt
+				   var question = prompt("Ask a yes or no question")
+				   magic8Ball.askQuestion(question)
+			   }, 500);
      
     };
      
