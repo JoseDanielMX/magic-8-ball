@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	var magic8Ball = {};
 	magic8Ball.listOfAnswers = ["No", "Yes", "I don't think so...", "Of course!", "Indubitably", "In your dreams."];
-    $("#answer").hide();
+	$("#answer").hide();
 
 	// Define the method
 	magic8Ball.askQuestion = function(question) {
@@ -44,6 +44,9 @@ $(document).ready(function() {
 				   var question = prompt("Ask a YES or NO question");
 				   $("#8ball").effect( "shake" );
 				   magic8Ball.askQuestion(question);
+
+				   // Add question to HTML
+				   $("#question").text(question);
 			   }, 500);
      
     };

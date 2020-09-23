@@ -55,6 +55,11 @@ header span {
   width: 80%;
 }
 
+#question {
+  font-size: 26px;
+  font-weight: bold;
+}
+
 #questionButton {
   background-color: #f16059;
   border: none;
