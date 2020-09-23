@@ -25,7 +25,7 @@ $(document).ready(function() {
          $("#answer").text(answer);
 
 		// Change the side of the image
-		$("#8ball").attr("src", "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/magic8ballAnswer.png");
+		$("#8ball").attr("src", "./img/answer-side.png");
 
 		 console.log(question);
 		 console.log(answer);
@@ -35,7 +35,7 @@ $(document).ready(function() {
     var onClick = function() {
  
 		$("#answer").hide();
-		$("#8ball").attr("src", "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/magic8ballQuestion.png");
+		$("#8ball").attr("src", "./img/number-side.png");
 		 
 		// Wait half a second before showing prompt
 		   setTimeout(

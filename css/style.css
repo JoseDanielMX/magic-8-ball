@@ -1,8 +1,8 @@
 /***** BASE STYLE *****/
 
 body {
-  background-color: #f8f8f8;
-  color: #454545;
+  background-image: linear-gradient(#000, #494949);
+  color: #fff;
   font-family: "Montserrat", sans-serif;
   margin: 0px;
   padding: 0px;
