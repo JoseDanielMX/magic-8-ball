@@ -35,6 +35,7 @@ $(document).ready(function() {
     var onClick = function() {
  
 		$("#answer").hide();
+		$("#question").text("Your question");
 		$("#8ball").attr("src", "./img/number-side.png");
 		 
 		// Wait half a second before showing prompt
