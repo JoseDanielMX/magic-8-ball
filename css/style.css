@@ -11,13 +11,22 @@ body {
 /***** HEADER *****/
 
 header {
-  padding-top: 0.25em;
-  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 header span {
   color: #f16059;
-  font-size: 60px;
+  font-size: 65px;
+  padding: 0 5px;
 }
 
 /***** MAIN CONTENT *****/
