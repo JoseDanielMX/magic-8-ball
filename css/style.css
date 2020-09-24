@@ -15,7 +15,7 @@ header {
   align-items: center;
   display: flex;
   justify-content: center;
-  padding: 20px 0;
+  padding: 20px 0 0;
 }
 
 header h1 {
@@ -74,8 +74,7 @@ main {
 /***** FOOTER *****/
 
 footer p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px;
+  font: 12px "Montserrat", sans-serif;
   text-align: center;
   text-transform: uppercase;
 }
@@ -83,6 +82,12 @@ footer p {
 /***** TABLET *****/
 
 @media (min-width: 640px) {
+
+  /***** HEADER *****/
+
+  header {
+    padding: 20px 0;
+  }
 
   /***** MAIN CONTENT *****/
 
